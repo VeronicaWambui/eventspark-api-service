@@ -130,7 +130,7 @@ def login():
 
 
 
-@app.route('/api/v1//event', methods=['POST'])
+@app.route('/api/v1/event', methods=['POST'])
 def publish_event():
     data = request.get_json()
     new_event = Event(event_id=str(uuid.uuid4()), name=data['name'], description=data['description'])
@@ -138,7 +138,7 @@ def publish_event():
     db.session.commit()
     return jsonify({'message' : "Event published successfully!"})
 
-@app.route('/api/v1//event', methods=['GET'])
+@app.route('/api/v1/event', methods=['GET'])
 def get_all_events():
     events = Event.query.all()
 
@@ -153,7 +153,7 @@ def get_all_events():
 
     return jsonify({'events' : output})
 
-@app.route('/api/v1//event/<event_id>', methods=['GET'])
+@app.route('/api/v1/event/<event_id>', methods=['GET'])
 def get_single_event(event_id):
     event = Event.query.filter_by(event_id=event_id).first()
 
@@ -169,7 +169,7 @@ def get_single_event(event_id):
 
 
 
-@app.route('/api/v1//event/<event_id>', methods=['PUT'])
+@app.route('/api/v1/event/<event_id>', methods=['PUT'])
 def edit_published_event(event_id):
     event = Event.query.filter_by(event_id=event_id).first()
 
