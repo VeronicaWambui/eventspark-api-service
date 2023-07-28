@@ -11,7 +11,7 @@ fonttools==4.31.2
 greenlet==2.0.2
 gunicorn==21.2.0
 idna==3.3
-importlib-metadata==6.8.0
+importlib-metadata==6.4.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 kiwisolver==1.4.0
