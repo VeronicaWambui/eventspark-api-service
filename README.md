@@ -10,4 +10,4 @@ Open [https://eventspark-api-service.onrender.com/](https://eventspark-api-servi
 ## Team
 Research and development by Veronica Wambui Wanjiku.
 ALX-software engineering programme.
-&copy; 2023.
+2023.
