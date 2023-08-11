@@ -8,7 +8,6 @@
 #Application based imports.
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
-from typing import TypedDict
 import jwt
 from functools import wraps
 import uuid
